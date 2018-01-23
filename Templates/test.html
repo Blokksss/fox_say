@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<P>基金类别</P>
+{% for blog in blog_list %}
+    <div class="blog">
+        <p>{{ blog.blog_title }}</p>
+        <p>{{ blog.author }}</p>
+        <p>{{ blog.create_date }}</p>
+    </div>
+{% endfor %}
+</body>
+</html>

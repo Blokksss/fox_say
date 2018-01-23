@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="blog detail" style="width: 100%">
+        <p style="font-weight: bold;position: relative;font-size: xx-large;top: 10px;color: darkgoldenrod;text-align: center">{{ blog_title }}</p>
+        <a href="#"  name="mark" ><img src="{% static 'images/socials/document.png' %}" style="height: 20px;width: 20px;position: relative;left:890px"></a>
+        <a href="#" name="zan"><img src="{% static 'images/socials/ymessenger-32x32.png' %}" style="height: 20px;width: 20px;position: relative;left: 910px;top:0px"></a>
+        <div style="position: relative;top:25px;word-wrap: break-word;word-break:break-all;left: 10px;background-color: cornflowerblue;width: 98%;overflow: auto;height: 70%">
+            <pre style="flood-color: black;font-style: italic">{{ blog_text }}</pre>
+        </div>
+    </div>
+{% endblock %}

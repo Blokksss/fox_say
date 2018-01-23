@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div style="background-color: lightblue;" class="new-class">
+    {% for blog in blog_list %}
+        <div style="background-color: silver;height: 100px" class="new-class-1">
+            <div style="height: 100px;width: 350px;position: relative;left:10px;background-color: #E1E1E1;text-align: left">
+                <span style="font-weight: bold;position: relative;left:0px;font-size: x-large;"><a href={% url 'blog_detail' blog.blog_id %}>{{ blog.blog_title }}</a></span>
+                <h4>作者：{{ blog.author }}</h4>
+                <h4 style="font-style: italic ">发布时间：{{ blog.create_date }}</h4>
+            </div>
+            <div style="height: 100px;width: 400px;position: relative;background-color: cornflowerblue;left:320px;bottom:100px;overflow: hidden">
+                <pre>{{ blog.blog_text }}</pre>
+
+            </div>
+            <div style="position: relative;left: 720px;height: 100px;width: 240px;bottom: 200px;background-color: darkgrey;">
+                <img src="{% static 'images/img3.jpg' %}" style="height: 100px;width: 240px">
+            </div>
+        </div>
+        <hr style="width: 500px">
+    {% endfor %}
+    </div>
+{% endblock %}

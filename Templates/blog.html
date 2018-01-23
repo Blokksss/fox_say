@@ -1,0 +1,209 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>BLOKKS‘s personal blog</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates Designed by Kimmy | ">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="{% static 'css/zerogrid.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+       <div style=' clear: both; text-align:center; position: relative;'></div>
+		<script src="{% static 'js/html5.js' %}"></script>
+		<script src="{% static 'js/css3-mediaqueries.js' %}"></script>
+	
+	<link href='{% static 'images/favicon.ico' %}' rel='icon' type='image/x-icon'/>
+    
+</head>
+<body bgcolor="#fffff0">
+<div class="wrap-body zerogrid">
+<!--------------Header--------------->
+<header>
+	<div class="wrap-header">
+		
+		<div class="top">
+			<div class="socials">
+				<ul>
+					<li><a href="#" title="facebook"><img  src="{% static 'images/socials/aeroplane.png' %}"/></a></li>
+					<li><a href="#" title="google"><img  src="{% static 'images/socials/camera.png' %}"/></a></li>
+					<li><a href="#" title="twitter"><img  src="{% static 'images/socials/chatting.png' %}"/></a></li>
+					<li><a href="#" title="rss"><img  src="{% static 'images/socials/umbrella.png' %}"/></a></li>
+					<li><a href="#" title="youtube"><img  src="{% static 'images/socials/conversation.png' %}"/></a></li>
+				</ul>
+			</div>
+			<div id="search">
+				<div class="button-search"></div>
+				<input type="text" value="搜索..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;搜索...&#39;;}">
+			</div>
+		</div>
+		
+		<div id="logo">
+			<a href="#"><h1>BLOKKS FIGHTING</h1></a>
+			<p>布洛克斯·希加的个人博客</p>
+		</div>
+		
+		<nav>
+			<div class="wrap-nav">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+	</div>
+</header>
+
+<!--------------Content--------------->
+<section id="content">
+	<div class="wrap-content">
+		<div class="row block">
+			<div id="main-content" class="col-2-3">
+				<div class="wrap-col">
+					<article>
+						<div class="heading">
+							<h2><a href="#">没有伞的孩子必须努力奔跑！</a></h2>
+						</div>
+						<div class="content">
+							<img src="{% static 'images/bm2.jpg' %}" width="100%"/>
+                            <p>还没想好放点啥...</p>
+						</div>
+						<div class="info">
+							<p>By Admin on December 01, 2012 - <a href="#">01 Commnets</a></p>
+						</div>
+					</article>
+
+					<section>
+                        <div class="bdlikebutton">
+                        <img src="{% static 'images/socials/mail.png' %}"><h4>有疑问请留言^_^</h4>
+						</div>
+						<form id="contact-form" method="post">
+						    <fieldset>
+						        <label><input name="email" value="邮箱" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" /></label>
+						        <label><input name="subject" value="主题" onBlur="if(this.value=='') this.value='Subject'" onFocus="if(this.value =='Subject' ) this.value=''" /></label>
+						        <textarea onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">请留言...</textarea>
+						        <div class="buttons">
+						            <a href="#" onClick="document.getElementById('contact-form').reset()">清空</a>
+						            <a href="#" onClick="document.getElementById('contact-form').submit()">发送</a>
+						        </div>											
+						    </fieldset>           
+						</form>
+					</section>
+				</div>
+			</div>
+			<div id="sidebar" class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>关于博主</h2></div>
+						<div class="content">
+							<a href="#" target="_blank"><img src="{% static 'images/bzmh6.jpg' %}" style="border: 0px;"/></a>
+							<p>湖南----<a href="#">blokks</a>fight</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading"><h2>Categories</h2></div>
+						<div class="content">
+							<ul>
+								<li><a href="#">^_^</a></li>
+								<li><a href="#">(*^▽^*)</a></li>
+								<li><a href="#">(╯‵□′)╯︵┻━┻</a></li>
+								<li><a href="#">o(╥﹏╥)o</a></li>
+								<li><a href="#">(〃'▽'〃)</a></li>
+								<li><a href="#">(>^ω^<)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<div class="heading"><h2>推荐文章</h2></div>
+						<div class="content">
+							<div class="post">
+								<img src="{% static 'images/bzmh8.jpg' %}" width="50px"/>
+								<h4><a href="#">Django开发</a></h4>
+								<p>November 11 ,2012</p>
+							</div>
+							<div class="post">
+								<img src="{% static 'images/bzmh9.jpg' %}" width="50px"/>
+								<h4><a href="#">爬虫框架编写</a></h4>
+								<p>November 11 ,2012</p>
+							</div>
+							<div class="post">
+								<img src="{% static 'images/bzmh10.jpg' %}" width="50px"/>
+								<h4><a href="#">Python类的进阶</a></h4>
+								<p>November 11 ,2012</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrap-footer">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>照片墙</h2></div>
+						<div class="content gallery">
+							<a href="#"><img src="{% static 'images/bzmh1.jpg' %}" width="120"/></a>
+							<a href="#"><img src="{% static 'images/bzmh2.jpg' %}" width="120"/></a>
+							<a href="#"><img src="{% static 'images/bzmh3.jpg' %}" width="120"/></a>
+							<a href="#"><img src="{% static 'images/bzmh4.jpg' %}" width="120"/></a>
+							<a href="#"><img src="{% static 'images/bzmh5.jpg' %}" width="120"/></a>
+							<a href="#"><img src="{% static 'images/bzmh7.jpg' %}" width="120"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>About Us</h2></div>
+						<div class="content">
+							<a href="#" target="_blank"><img src="{% static 'images/bm3.jpg' %}" style="border: 0px;"/></a>
+							<p><a href="#" target="_blank">blog</a> created by <a href="#">BLOKKS</a>待编辑</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Contact Us</h2></div>
+						<div class="content">
+							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue.</p>
+							<p>Website : <a href="#" target="_blank">www.</a></p>
+							<p>+1 (123) 444-5677 <br/> +1 (123) 444-5678</p>
+							<p>Address: 123 TemplateAccess Rd1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div>
+</body></html>
